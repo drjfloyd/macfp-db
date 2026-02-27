@@ -1,0 +1,185 @@
+\documentclass[12pt]{book}
+
+\usepackage{graphicx}
+\usepackage{subcaption} % Subcaptions
+\newcommand*\degC[1]{{#1}{\,\textdegree}C} % The temperature was \degC{20}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9.0in}
+\setlength{\topmargin}{0.in}
+\setlength{\headheight}{0.in}
+\setlength{\headsep}{0.in}
+\setlength{\parindent}{0.25in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\evensidemargin}{0.0in}
+
+\pagestyle{empty}
+
+\begin{document}
+
+A few notes on the simulations:
+\begin{itemize}
+	\item All simulations included the full hood with the HRR being calculated using the same calorimetry equation as the experimental results.
+	\item Other than the grid study plot, all cases run with 1\,cm resolution.
+	\item Other than the angular study plot, all cases run with 400 angles.
+	\item For the Spyro simulations, the ignition temperature was set at \degC{298}.
+	\item For the Spyro sensitivity plots, the 25, 50, and 75 curves represent simply applying the cone burning rate for that cone exposure at ignition. 
+	\item  For the Spyro sensitivity plots, the +10 and -10 indicate shifts in ignition temperature.
+\end{itemize}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[height=2.1in]{HRR_no_blowing}
+\caption{\footnotesize UMD kinetics, no blowing}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[height=2.1in]{HRR_blowing} 
+\caption{\footnotesize UMD kinetics, blowing}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[height=2.1in]{HRR_angles} 
+\caption{\footnotesize UMD kinetics, blowing, change angles}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[height=2.1in]{HRR_kinetics}
+\caption{\footnotesize Multiple kinetics, blowing}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[height=2.1in]{HRR_spyro} 
+\caption{\footnotesize Spyro, blowing}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[height=2.1in]{HRR_spyro_sens}
+\caption{\footnotesize Spyro sensitivity using FSRI data, blowing}
+\end{subfigure}
+\caption{Predicted vs Measured Heat Release Rate.}
+\label{SBI_UMD_HRR}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_105}
+		\caption{\footnotesize UMD kinetics, blowing}
+	\end{subfigure}
+	\\
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_105_angles} 
+		\caption{\footnotesize UMD kinetics, blowing, change angles}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_105_kinetics}
+		\caption{\footnotesize Multiple kinetics, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_105_spyro} 
+		\caption{\footnotesize Spyro, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_105_spyro_sens}
+		\caption{\footnotesize Spyro sensitivity using FSRI data, blowing}
+	\end{subfigure}
+	\caption{Predicted vs Measured Corner Heat Flux, 105 s (20 s FDS avg.).}
+	\label{SBI_UMD_HRR}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_145}
+		\caption{\footnotesize UMD kinetics, blowing}
+	\end{subfigure}
+	\\
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_145_angles} 
+		\caption{\footnotesize UMD kinetics, blowing, change angles}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_145_kinetics}
+		\caption{\footnotesize Multiple kinetics, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_145_spyro} 
+		\caption{\footnotesize Spyro, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_145_spyro_sens}
+		\caption{\footnotesize Spyro sensitivity using FSRI data, blowing}
+	\end{subfigure}
+	\caption{Predicted vs Measured Corner Heat Flux, 145 s (20 s FDS avg.).}
+	\label{SBI_UMD_HRR}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_185}
+		\caption{\footnotesize UMD kinetics, blowing}
+	\end{subfigure}
+	\\
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_185_angles} 
+		\caption{\footnotesize UMD kinetics, blowing, change angles}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_185_kinetics}
+		\caption{\footnotesize Multiple kinetics, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_185_spyro} 
+		\caption{\footnotesize Spyro, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_185_spyro_sens}
+		\caption{\footnotesize Spyro sensitivity using FSRI data, blowing}
+	\end{subfigure}
+	\caption{Predicted vs Measured Corner Heat Flux, 185 s (20 s FDS avg.).}
+	\label{SBI_UMD_HRR}
+\end{figure}
+
+\clearpage
+
+
+\end{document}
